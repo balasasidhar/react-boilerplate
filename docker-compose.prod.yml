@@ -7,4 +7,4 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     ports:
-      - '1337:80'
+      - '3000:80'
