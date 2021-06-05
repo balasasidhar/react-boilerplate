@@ -4,9 +4,9 @@
 
 `ReactJS, React Router 4, Redux, Bootstrap4, Styled Components, Babel7 and Webpack 4`
 
-> Make sure that you've installed [NodeJS](https://nodejs.org/en/) 10.x or higher and NPM version 6.x or higher.
+> Make sure that you've installed [NodeJS](https://nodejs.org/en/) 14.x or higher and NPM version 6.x or higher and [Docker](https://www.docker.com/products/docker-desktop). 
 
-- ### Development
+- ### Basic Steps
 
   - Clone the repo
 
@@ -20,60 +20,18 @@
   $ cd react-boilerplate
   ```
 
-  - Install dependecies using yarn or npm
+- ### For Docker
+
+  - Development
 
   ```
-  $ yarn install
+  $ docker compose up -d --build
   ```
 
-  or
+  - Production
 
   ```
-  $ npm install
-  ```
-
-  - Start development server
-
-  ```
-  $ yarn start
-  ```
-
-  or
-
-  ```
-  $ npm start
-  ```
-
-- ### Testing
-
-  - Start development server
-
-  ```
-  $ yarn run test
-  ```
-
-  or
-
-  ```
-  $ npm run test
-  ```
-
-- ### Production Build
-  - Build
-  ```
-  $ yarn run build
-  ```
-  or
-  ```
-  $ npm run build
-  ```
-  - Start production server
-  ```
-  $ yarn run serve
-  ```
-  or
-  ```
-  $ npm run serve
+  $ docker compose -f docker-compose.prod.yml up -d --build
   ```
 
 ### Libraries and Official Docs
