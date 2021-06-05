@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  frontend-prod:
+    container_name: react-boilerplate-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '1337:80'
